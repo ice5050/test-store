@@ -1,4 +1,22 @@
 GIT
+  remote: git://github.com/omise/active_merchant.git
+  revision: e0d7b179be18d4eef83462d1c8d066393f0a3965
+  branch: omise-1.47.0
+  specs:
+    activemerchant (1.47.0)
+      activesupport (>= 3.2.14, < 5.0.0)
+      builder (>= 2.1.2, < 4.0.0)
+      i18n (>= 0.6.9)
+      nokogiri (~> 1.4)
+
+GIT
+  remote: git://github.com/omise/spree-omise.git
+  revision: fee269a69ca1818ca5cf3c1f00a91ba5c96a1267
+  specs:
+    spree-omise (0.0.1)
+      spree
+
+GIT
   remote: git://github.com/spree/spree_auth_devise.git
   revision: d2ee454e21746094d6e0bc79b9d4421b5849c20e
   branch: 3-0-stable
@@ -43,11 +61,6 @@ GEM
     activejob (4.2.1)
       activesupport (= 4.2.1)
       globalid (>= 0.3.0)
-    activemerchant (1.47.0)
-      activesupport (>= 3.2.14, < 5.0.0)
-      builder (>= 2.1.2, < 4.0.0)
-      i18n (>= 0.6.9)
-      nokogiri (~> 1.4)
     activemodel (4.2.1)
       activesupport (= 4.2.1)
       builder (~> 3.1)
@@ -332,6 +345,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activemerchant!
   byebug
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
@@ -340,6 +354,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spree (= 3.0.1)
+  spree-omise!
   spree_auth_devise!
   spree_gateway!
   spring
